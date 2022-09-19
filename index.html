@@ -35,7 +35,7 @@
         <h6 class="letrasnaranjas">Soy Bryan Belman, Me encanta verte por aqui, acompañame a dar una vuelta por este
             lugar...</h6>
         <div class="imgloca">
-            <img class="img boton" src="./images/bryanfoto.jpg" alt="">
+            <img class="img boton" src="./images/bryan.jpg" alt="">
         </div>
         <h6 class="center tamañotexto">Soy desarrollador Java Full Stack,</h6>
         <p class="center tamañotexto">Resido actualmente en Mexico,</p>
@@ -158,10 +158,90 @@
     </div>
     <br>
     <br>
+    <div class="contenedores">
+      <main class="container d-print-none"> 
+        <br>
+        <h1>Cotización</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputName
+                            ">Name</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+            </div>
+            <!--Row-->
+    
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputHours">Hours</label>
+                    <input type="text" class="form-control" id="inputHours" placeholder="# Hours">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputRate">Hourly Rate</label>
+                    <input type="text" class="form-control" id="inputRate" placeholder="$">
+                </div>
+            </div>
+            <!--Row-->
+    
+            <div class="form-row">
+    
+                <div class="form-group col-md-4">
+                    <label for="inputExtras">Extras</label>
+                    <select id="inputExtras" class="form-control" multiple>
+                        <option value="7000">Graphic Design</option>
+                        <option value="1500">Hosting</option>
+                        <option value="12000">Support</option>
+                    </select>
+                </div>
+                <!--Select-->
+    
+                <div class="form-group col-md-4">
+                    <label for="inputChanges">Change Management %</label>
+                    <input type="text" class="form-control" id="inputChanges">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputFCost">Fixed Costs</label>
+                    <input type="text" class="form-control" id="inputFCost">
+                </div>
+            </div>
+            <!--Row-->
+    
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkIVA">
+                    <label class="form-check-label" for="checkIVA">
+                        I.V.A.
+                    </label>
+                </div>
+            </div>
+            <button type="button"style="background-color: orangered; border-color: orangered ;" class="btn btn-primary" id="btnQuote">Quote</button>
+        </form>
+    </main>
+    <main class="container">
+        <div class="card">
+            <div class="card-header">
+                Quotation
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" id="cardTitle"></h5>
+                <p class="card-text" id="cardText"></p>
+                <p class="card-text" style="text-align:right;" id="cardCost">$</p>
+            </div>
+        </div><!-- card -->
+        <br>
+    </main>
+    </div>
+    <br>
+    <br>
     <div class="contenedores flex">
         <div>
 
-            <img class="img" src="./images/bryanfoto.jpg" alt="">
+            <img class="img" src="./images/bryan.jpg" alt="">
         </div>
         <div>
 
@@ -174,16 +254,15 @@
       
     </div>
 
+
     <footer>
         2022 Bryan Belman
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 
 </html>
